@@ -1,0 +1,23 @@
+.contactList{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}
+.contactItem{
+    display: flex;
+    align-items: baseline;
+
+    gap: 15px;
+}
+.contactButton{
+    margin-left: auto;
+    height: 20px;
+    padding: 2px 5px;
+
+}
+.contactName{
+    font-weight: bold;
+
+}
