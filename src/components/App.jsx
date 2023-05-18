@@ -1,6 +1,6 @@
 import {  useEffect, useState } from 'react';
-import {ContactForm}  from './ContactForm/ContactForm';
-import { ContactList } from './ContactList/ContactList';
+import ContactForm  from './ContactForm/ContactForm';
+import {ContactList}  from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import s from './App.module.css';
 import { nanoid } from 'nanoid';
@@ -59,7 +59,7 @@ const onDeleteContact = id => {
       <div className={s.appContainer}>
         <h1 className={s.titlePhonebook}>Phonebook</h1>
 
-        <ContactForm onSubmit={addContact} />
+        <ContactForm addContact={addContact} />
 
         <h2 className={s.titlePhonebook}>Contacts</h2>
         <Filter
@@ -67,7 +67,7 @@ const onDeleteContact = id => {
           value={filter}
         />
         <ContactList
-          // id={this.id}
+          // id={id}
           onDeleteContact={onDeleteContact}
           contacts={filteredContacts()}
         />
